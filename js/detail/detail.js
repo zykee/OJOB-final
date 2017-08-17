@@ -1,8 +1,10 @@
-$(document).ready(details());
-function details() {
+$(document).ready(function () {
+    getDetails();
+    getRelations();
+});
+function getDetails() {
     $.get(`alljobs/${window.location.href.split('?id=')[1]}`, function (data) {
         let result = data;
-        console.log(result);
         let str = `<div class="job-brief-top">
                         <p class="detail-conpany"><span>${result.company}</span>招聘</p>
                         <p class="detail-jobs-description"><span>职位描述 :</span>${result.position}</p>
@@ -15,11 +17,13 @@ function details() {
                     <div class="detail-jobs-order">${result.description}</div>`;
         $('#detail-job-box').empty();
         $('#detail-job-box').append(str);
-        $.get(`/relation/${data.id}`, function (job) {
-            console.log(job);
-            let str = '';
-            for (let j = 0; j < 4; j++) {
-                str += `<div class="detail-jobs-small-box">
+    });
+}
+function getRelations() {
+    $.get(`/relation/${window.location.href.split('?id=')[1]}`, function (job) {
+        let str = '';
+        for (let j = 0; j < 4; j++) {
+            str += `<div class="detail-jobs-small-box">
                         <div>
                             <div class="detail-jobs-small-box-left"><img src="images/code.png" alt="" class="like-img"></div>
                             <div class="detail-jobs-small-box-right">
@@ -32,13 +36,13 @@ function details() {
                             </div>
                         </div>
                     </div>`;
-            }
-            $('#like-jobs').append(str);
-        });
+        }
+        $('#like-jobs').empty();
+        $('#like-jobs').append(str);
     });
 }
-
 $('#like-jobs').on('click','.btn',function () {
     let id = $(this).attr('id');
-    details();
+    getDetails();
+    getRelations();
 });

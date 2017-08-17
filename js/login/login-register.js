@@ -112,12 +112,8 @@ $(document).ready(function () {
                 if(ans!=="success"){
                     shakeModal(ans);
                 }else {
-                    sessionStorage.setItem('user',JSON.stringify(info.email));
-                    $("#loginModal").modal('hide');
-                    $(".modal-modal-dialog").addClass("close-hidden");
-                    $("#user-img").hide();
-                    $("#logined-user-email").hide();
-                    $(".whenLogIn").append(`<li><a>${$('#register-email').val()}</a></li>`);
+                    sessionStorage.setItem('user',JSON.stringify({email:info.email}));
+                    hideHeader();
                 }
             });
         }

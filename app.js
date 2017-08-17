@@ -392,7 +392,6 @@ app.post('/user/newJob',function (req,res) {
     req.models.user.find({email:req.query.email},function (err,data) {
         // console.log(data);
         newJob.user_id = data[0].id;
-        console.log(newJob);
         req.models.job.create(newJob, function (err,result) {
             if(err){
                 console.log(err);
@@ -554,7 +553,7 @@ app.post(`/user`,function (req,res) {
     req.models.user.exists({email:data.email},function (err,reply) {
         if(reply===true){
             res.send("This account has been registered!");
-            console.log("This account has been registered!");
+            // console.log("This account has been registered!");
         }
         else{
             newRecord.password=crypto.createHash('md5').update(newRecord.password).digest('hex');
@@ -571,7 +570,7 @@ app.post(`/user`,function (req,res) {
 });
 /*-----------------Send email Start-----------------*/
 app.get(`/sendMailForRegister`,function (req,res) {
-    console.log("send mail");
+    // console.log("send mail");
     let info=req.query;
     let mailOptions = {
         from: '"Coding Girls Club"<2017983051@qq.com>', // sender address
@@ -583,13 +582,13 @@ app.get(`/sendMailForRegister`,function (req,res) {
         
        Any question, please contact with us.`, // plain text body
     };
-    console.log(mailOptions);
+    // console.log(mailOptions);
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.log(error);
         }
         else{
-            console.log("send email success!");
+            // console.log("send email success!");
             res.send("success");
         }
     });
@@ -607,13 +606,13 @@ app.get(`/user/login`,function (req,res) {
             res.send("No such account!");
         }
         else {
-            console.log(info.password);
+            // console.log(info.password);
             if (crypto.createHash('md5').update(info.password).digest('hex')=== result[0].password) {
-                console.log("Login success");
+                // console.log("Login success");
                 res.send("success");
             }
             else {
-                console.log("error");
+                // console.log("error");
                 res.send("password error!");
             }
         }
@@ -624,7 +623,7 @@ app.get(`/user/login`,function (req,res) {
 /*--------------Forget Password Start--------------*/
 app.put(`/user/forget`,function (req,res) {
     let data=req.body;
-    console.log(data);
+    // console.log(data);
     req.models.user.find({email:data.email},function (err,result) {
         if(result.length===0){
             res.send("No such account!");
@@ -632,7 +631,7 @@ app.put(`/user/forget`,function (req,res) {
         else {
             result[0].password =crypto.createHash('md5').update(data.password).digest('hex');
             result[0].save();
-            console.log("alter success!");
+            // console.log("alter success!");
             res.status(200).send("success");
             // res.send(result);
         }
