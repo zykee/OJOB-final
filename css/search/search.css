@@ -1,0 +1,77 @@
+form {
+    position: relative;
+    /*width: 300px;*/
+    margin: 0 auto;
+}
+.d7 {
+    /*background: #7BA7AB;*/
+    padding-top: 10%;
+    margin-bottom: 10%;
+
+}
+.d7:after {content:""; clear:both; display:table}
+.d7 form {
+    width: auto;
+    float: right;
+    margin-right: 30px;
+}
+.d7 input {
+    width: 250px;
+    height: 42px;
+    padding-left: 15px;
+    border-radius: 42px;
+    border: 1px solid #209b60;
+    background: white;
+    outline: none;
+    position: relative;
+    transition: .3s linear;
+}
+.d7 input:focus {
+    width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    .d7 input:focus {
+        width: 250px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .d7 input:focus {
+        width: 250px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .d7 input:focus {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .d7 input:focus {
+        width: 250px;
+    }
+}
+
+
+
+
+
+.d7 button {
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: -2px;
+    right: 0;
+}
+.d7 button:before{
+    content: "\f002";
+    font-family: FontAwesome;
+    color: #209b60;
+}
+.d7 button:focus{
+    background: none;
+    border: none;
+    outline: none;
+}

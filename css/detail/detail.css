@@ -1,0 +1,101 @@
+#detail-header{
+    /*margin-bottom: 50px;*/
+    padding: 15px;
+}
+.main{
+    margin-bottom: 5%;
+    /*background-color: #8b8b8b;*/
+}
+.login .btn-login, .registerBox .btn-register{
+    background-color: #209b60;
+}
+.logo{
+    color: #209B60 !important;
+    font-size: 20px !important;
+    cursor: pointer;
+}
+#log-in{
+    color: #209B60;
+}
+.whenLogIn{
+    padding-top: 10px;
+    /*background-color: #fff;*/
+}
+.whenLogIn li:first-of-type{
+    padding-top: 1.5%;
+}
+.main-left{
+    /*background-color: #dddddd;*/
+    padding: 0 0 5% 4%;
+}
+.main-right{
+    /*background-color: #8bf7ff;*/
+}
+.detail-jobs-order{
+    /*padding-top: 10%;*/
+}
+.job-brief-top{
+    padding-bottom: 7%;
+    background-color: #fff;
+}
+.detail-conpany{
+    /*background-color: #209b60;*/
+    padding: 20px 0;
+    font-size: 18px;
+    /*font-weight: bold;*/
+}
+.deadline{
+    padding-top: 4%;
+}
+.detail-jobs-description{
+    /*font-weight: bold;*/
+    font-size: 18px;
+}
+
+/*相关职位推荐*/
+.panel-body {
+    text-align: center;
+    background-color: #0b915a;
+    color: white;
+}
+.detail-jobs-small-box{
+    /*border: 1px solid #000;*/
+    padding: 5px 0 5px 0;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px beige;
+}
+.detail-jobs-small-box-left,.detail-jobs-small-box-right{
+    display: inline-block;
+}
+.detail-jobs-small-box-left{
+    /*background-color: yellow;*/
+    font-size: 50px;
+    /*padding-right: 20px;*/
+}
+.detail-jobs-small-box-right{
+    padding: 0;
+    /*background-color: skyblue;*/
+    width: 80%;
+}
+.detail-jobs-small-box-right ul{
+    margin-left: -20px;
+}
+li{
+    list-style: none;
+}
+.detail-jobs-small-box-right .like-position {
+    padding-bottom: 2%;
+    font-size: 1.2em;
+    padding-top: 2%;
+}
+.detail-jobs-small-box-right .like-address{
+    font-size: 1.2em;
+}
+.like-img {
+    width: 50px;
+    margin-bottom: 65px;
+}
+.like-more{
+    padding-top: 5%;
+    float: right;
+}

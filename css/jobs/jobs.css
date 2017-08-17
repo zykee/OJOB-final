@@ -1,0 +1,109 @@
+/* ==========================================================================
+	$jobs
+========================================================================== */
+a:hover{
+    text-decoration: none !important;
+}
+.fa{
+    color: #209b60;
+}
+.glyphicon{
+    color: #209b60;
+}
+
+.jobs {
+    padding-top: 1.5%;
+    /*background-color: #209b60;*/
+}
+.jobs h3 {
+    color: #3c3f41;
+    margin-top: 0;
+}
+.jobs-box p {
+    font-family: "Merriweather", Arial, sans-serif;
+    color: rgba(41, 41, 41, 0.75);
+
+    /*font-size: 14px;*/
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.job-header{
+
+    text-align: center;
+    /*background-color: yellow;*/
+    padding: 1.1% 0;
+}
+.job-header h5{
+    font-size: 30px;
+    /*color: black;*/
+    /*font-weight: 700;*/
+}
+.job-item{
+    width: 200px;
+    height: 100px;
+    border: 1px solid #209b60;
+}
+
+
+.post {
+    margin-bottom: 30px;
+    padding: 15px;
+    /*border: 1px solid #474747;*/
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+}
+
+.post h3 {
+    margin-top: 15px
+}
+
+.post h3 a {
+    color: #000;
+    font-weight: normal;
+}
+
+.post h3 a:hover {
+    color: #209b60
+}
+.list-inline a{
+    color: #3c3f41;
+}
+.text-left{
+    float: left;
+}
+.text-left a{
+    color: #2d3033;
+}
+.description{
+    color:#6699ff;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+
+
+/*.comments li:nth-child(even) {*/
+/*padding: 15px;*/
+/*background-color: #f5f5f5;*/
+/*margin: 20px 0*/
+/*}*/
+
+/*.comments .thumb {*/
+/*float: left;*/
+/*margin-right: 20px*/
+/*}*/
+
+/*.comments .content {*/
+/*overflow: hidden*/
+/*}*/
+
+/*.comments h5 {*/
+/*text-transform: capitalize;*/
+/*font-weight: 700*/
+/*}*/
+
+/*.comments p {*/
+/*margin-bottom: 0px*/
+/*}*/

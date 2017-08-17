@@ -1,0 +1,472 @@
+/************** deafault css******************/
+
+#preloader {
+    background: none repeat scroll 0 0 #fff;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+#preloader i {
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+}
+a:focus {
+    outline: 0px solid
+}
+
+a:hover {
+    text-decoration: none
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fix {
+    overflow: hidden
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'Cabin', sans-serif;
+}
+html,
+body {}
+
+.section_padding {
+    padding: 80px 0px
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+/************** main css ******************/
+/************** header css ******************/
+
+#header_area {
+    background: url(../images/bg.jpg);
+    padding-top: 35px;
+    background-size: cover;
+    background-position: center center
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+.logo h2 {}
+
+.logo h2 a {
+    color: #fff;
+    text-decoration: none
+}
+
+.navbar-nav>li>a {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background: transparent !important;
+    border-color: #337ab7;
+    color: #209B60;
+}
+
+.navbar-nav>li>a:hover,
+/*.navbar-nav>li>a:focus ,*/
+.navbar-nav>li>a:active {
+    background: none
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d !important;
+    margin-bottom: 5px;
+    /* padding-top: 11% !important; */
+    /* padding-bottom: 19%; */
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: #0b915a !important;
+}
+
+.navbar-nav>li>a {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.header_area_text {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    /*padding-right: 500px;*/
+}
+
+.header_area_text h2 {
+    font-size: 50px;
+    color: #fff
+}
+
+.header_area_text p {
+    color: #fff;
+    margin: 30px 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.header_area_text a {
+    background: #209B60;
+    display: inline-block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+#header_area .btn {
+    background-color: #209B60;
+    color: #fff;
+    /*font-size: 15px;*/
+    /*font-weight: 600;*/
+    /*border: 0;*/
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 1px;
+}
+#header_area .btn:hover{
+    background-color: transparent;
+    color: #209b60;
+}
+.jobs .jobs-box .btn{
+    background-color: #209B60;
+    color: #fff;
+    /*font-size: 15px;*/
+    /*font-weight: 600;*/
+    /*border: 0;*/
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 1px;
+}
+
+.choice{
+    border-top: 3px solid rgba(32, 155, 96, 0.96);
+    padding-bottom: 1.5%;
+    /*padding-top: 2.5%;*/
+}
+.choice-box-left .btn{
+    color: white;
+}
+.choice-box-right .btn{
+    color: white;
+}
+.click-color{
+    background-color: black;
+    margin: 2px;
+}
+.btn-group>.btn{
+    margin-right: 2px;
+}
+/*.choice p{*/
+    /*!*background-color: #1da066;*!*/
+    /*padding-top: 2.5%;*/
+/*}*/
+/*.choice p a{*/
+    /*text-decoration: none;*/
+    /*color: white;*/
+    /*background-color: #474747;*/
+    /*font-size: 1.8em;*/
+    /*padding: 1px 8px 8px 10px;*/
+/*}*/
+
+.choice-box{
+    width: 100%;
+    height: 200px;
+    margin-top: 3%;
+    background-color: rgba(235, 235, 235, 0.46);
+    /*margin-bottom: 13%;*/
+    /*border: 1px solid #000;*/
+}
+.choice-box-left{
+    width: 49%;
+    font-size: 25px;
+    /*background-color: #ff5b89;*/
+    float: left;
+    padding: 3%;
+    /*border-right: 1px solid #BBB5B5;*/
+}
+.choice-box-left p , .choice-box-right p{
+    font-size: 25px;
+    font-weight: 600;
+}
+.choice-box-center{
+    /*width: 2%;*/
+    height: 100px;
+    background-color: #ff5b89;
+    float: left;
+}
+.choice-box-center {
+    /* width: 2%; */
+    height: 80%;
+    /*background-color: #ff5b89;*/
+    float: left;
+    border-right: 1px solid #209b60;
+    margin-top: 2%;
+}
+.choice-box-right{
+    width: 49%;
+    float: left;
+    /*background-color: #b47cff;*/
+    padding: 3%;
+}
+
+
+
+
+
+/*---------点击分类后增加的样式-------------*/
+.typeStyle{
+    background-color: #3d3d3d;
+}
+.categoryStyle{
+    background-color: #3d3d3d;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------
+	Contact form
+-------------------------------------------------------------------------------*/
+/*.conForm {
+    text-align: center;
+}
+.conForm h5 {
+    font-size: 30px;
+}
+.conForm p {
+    text-align: center;
+    margin: 7%;
+}
+.conForm input {
+    color: #797979;
+    padding: 15px 30px;
+    border: none;
+    margin-right: 3%;
+    margin-bottom: 30px;
+    outline: none;
+    font-style: normal;
+    border-bottom: #e0e0e0 1px solid;
+    font-size: 15px;
+}
+.conForm input.noMarr {
+    margin-right: 0px;
+}
+.conForm textarea {
+    color: #797979;
+    padding: 15px 30px;
+    margin-bottom: 18px;
+    outline: none;
+    height: 150px;
+    font-style: normal;
+    resize: none;
+    font-size: 15px;
+    border: none;
+    border-bottom: #e0e0e0 1px solid;
+}
+.conForm .submitBnt {
+    background: #3bc492;
+    color: #fff;
+    margin-top: 30px;
+    padding:15px 30px 15px 30px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    border: 0;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.conForm .submitBnt:hover {
+    background: #3d3d3d;
+    color: #fff;
+}
+#success_page{
+    color: #00bdbd;
+    font-weight: 500;
+}
+.error_message{
+    color: #ff675f;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+#success_page h3{
+    font-size:17px;
+    color:#5ed07b;
+    font-weight: 700;
+}*/
+
+/*---------订阅--------------------*/
+.newsletter-section {
+    background: url(../images/s.png) repeat left top scroll #FFF;
+    padding: 80px 0
+}
+
+.newsletter-section form {
+    text-align: center
+}
+
+.newsletter-section .form-control {
+    width: 290px;
+    display: inline-block;
+    min-height: 40px;
+    margin-bottom: 15px;
+    margin-right: 10px
+}
+.center-heading {
+    text-align: center
+}
+
+.center-heading h2 {
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+.center-heading .border-width {
+    height: 1px;
+    width: 90px;
+    background-color: #209b60;
+    display: block;
+    margin: 10px auto
+}
+
+.center-heading p {
+    font-size: 16px
+}
+.center-heading .border-width {
+    height: 1px;
+    width: 90px;
+    background-color: #209b60;
+    display: block;
+    margin: 10px auto
+}
+.btn-skin {
+    background-color: #209b60;
+    color: #fff;
+    padding: 7px;
+}
+.margin-btm-50 {
+    margin-bottom: 50px
+}
+
+/* ------------------------------------------------------------------------------
+	 Footer
+-------------------------------------------------------------------------------*/
+.footer {
+    text-align: left;
+}
+.footer-top {
+    background-color: #181818;
+    padding-top: 50px;
+}
+.footer-bottom {
+    background-color: #313454;
+    padding: 20px 0;
+}
+.footer .footer-col {
+    margin-bottom: 80px;
+}
+.footer h5 {
+    color: #fff;
+}
+.footer h5 {
+    margin-bottom: 20px;
+}
+.footer p {
+    color: rgba(255, 255, 255, 0.25);
+}
+.footer a {
+    color: rgba(255, 255, 255, 0.50);
+}
+.footer a:hover {
+    color: #e84545;
+}
+.footer .footer-share {
+    margin-top: 0;
+}
+.footer .footer-share li {
+    display: inline-block;
+    float: none;
+}
+.footer .footer-share a {
+    border: none;
+    font-size: 21px;
+    color: rgba(255, 255, 255, 0.25);
+}
+.footer .fa-heart {
+    color: #e84545;
+    font-size: 11px;
+    margin: 0 2px;
+}
+
+/*----------------------分页--------------------*/
+.mypageinit{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+.panel-body{
+    text-align: center;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #209b60;
+    border:none;
+}
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #222222;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.black{
+    background-color: #209B60;
+    color: white;
+}
+.btn-default{
+    background-color: black !important;
+}
+#btn-login{
+    background-color: #209B60 !important;
+}
+#btn-register{
+    background-color: #209B60 !important;
+}
