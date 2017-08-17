@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 
 let orm = require('orm');
 
-orm.connect('sqlite:/home/coco/WebstormProjects/team/OJOBS/jobs.db', function(err, db) {
+orm.connect('sqlite:jobs.db', function(err, db) {
     if (err) {
         return console.error('Connection error: ' + err);
     }
@@ -23,7 +23,7 @@ orm.connect('sqlite:/home/coco/WebstormProjects/team/OJOBS/jobs.db', function(er
     }
 });
 
-app.use(orm.express("sqlite:/home/coco/WebstormProjects/team/OJOBS/jobs.db", {
+app.use(orm.express("sqlite:jobs.db", {
     define: function (db, models, next) {
         models.user = db.define("user",{
             id:Number,
