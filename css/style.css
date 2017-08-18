@@ -73,7 +73,7 @@ p {
     font-size: 14px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase
+    /*text-transform: uppercase*/
 }
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     background: transparent !important;
@@ -101,7 +101,7 @@ p {
     font-size: 14px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .header_area_text {
@@ -230,6 +230,14 @@ p {
     float: left;
     /*background-color: #b47cff;*/
     padding: 3%;
+}
+.choice-of-type{
+    color: #209B60;
+    font-weight: 600;
+}
+.choice-of-category{
+    color: #209B60;
+    font-weight: 600;
 }
 
 

@@ -14,8 +14,10 @@
     font-size: 20px !important;
     cursor: pointer;
 }
-#log-in{
+#log-in {
     color: #209B60;
+    font-size: 18px;
+    padding-top: 11px;
 }
 .whenLogIn{
     padding-top: 10px;
@@ -98,4 +100,10 @@ li{
 .like-more{
     padding-top: 5%;
     float: right;
+}
+.detail-jobs-apply{
+    padding-top: 3%;
+}
+.detail-jobs-tel{
+    font-weight: bold;
 }

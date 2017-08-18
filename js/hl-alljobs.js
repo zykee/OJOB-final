@@ -194,20 +194,20 @@ function addJob(job) {
                 for(let j = current;j<current+9;j++){
                     str += ` <div class="col-lg-4 col-sm-6 col-xs-12">
                    <div class="post">
-                       <a href="post.html"></a>
+                       <a href="../detail.html?id=${job[j].id}"></a>
                        <h3>
-                           <a href="post.html" class="Post-title">${job[j].position}</a>
+                           <a href="../detail.html?id=${job[j].id}" class="Post-title">${job[j].position}</a>
                        </h3>
                        <ul class="list-inline">
                            <li>
-                               <a href="#" class="releaseUser"><i class="fa fa-user"></i> ${job[j].user_name}</a>
+                               <a href="../detail.html?id=${job[j].id}" class="releaseUser"><i class="fa fa-user"></i> ${job[j].user_name}</a>
                            </li>
                            <li>
-                               <a href="#" class="tags"><i class="fa fa-tags"></i> ${job[j].category}</a>
+                               <a href="../detail.html?id=${job[j].id}" class="tags"><i class="fa fa-tags"></i> ${job[j].category}</a>
                            </li>
                            <br>
                            <li>
-                               <a href="#" class="date"><i class="	glyphicon glyphicon-time"></i> ${job[j].release_date}-${job[j].expiry_date}</a>
+                               <a href="../detail.html?id=${job[j].id}" class="date"><i class="	glyphicon glyphicon-time"></i> ${job[j].release_date}-${job[j].expiry_date}</a>
                            </li>
                        </ul>
                        <p class="description">

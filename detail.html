@@ -131,19 +131,19 @@
                 <div class="box">
                     <div class="content">
                         <!--<div class="social">-->
-                            <!--<a class="circle github" href="/auth/github">-->
-                                <!--<i class="fa fa-github fa-fw"></i>-->
-                            <!--</a>-->
-                            <!--<a id="google_login" class="circle google" href="/auth/google_oauth2">-->
-                                <!--<i class="fa fa-google-plus fa-fw"></i>-->
-                            <!--</a>-->
-                            <!--<a id="facebook_login" class="circle facebook" href="/auth/facebook">-->
-                                <!--<i class="fa fa-facebook fa-fw"></i>-->
-                            <!--</a>-->
+                        <!--<a class="circle github" href="/auth/github">-->
+                        <!--<i class="fa fa-github fa-fw"></i>-->
+                        <!--</a>-->
+                        <!--<a id="google_login" class="circle google" href="/auth/google_oauth2">-->
+                        <!--<i class="fa fa-google-plus fa-fw"></i>-->
+                        <!--</a>-->
+                        <!--<a id="facebook_login" class="circle facebook" href="/auth/facebook">-->
+                        <!--<i class="fa fa-facebook fa-fw"></i>-->
+                        <!--</a>-->
                         <!--</div>-->
                         <div class="division">
                             <div class="line l"></div>
-                            <span>codingirls</span>
+                            <span>CodinGirls</span>
                             <div class="line r"></div>
                         </div>
                         <div class="error"></div>
@@ -151,7 +151,7 @@
                             <form method="post" action="/login" accept-charset="UTF-8">
                                 <input id="login-email" class="form-control" type="text" placeholder="Email" name="email">
                                 <input id="login-password" class="form-control" type="password" placeholder="Password" name="password">
-                                <input id="btn-login" class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                                <input id="btn-login" class="btn btn-default btn-login" type="button" value="Login" >
                             </form>
                             <p class="forgetPassword" id="forgetPassword"><a href="javascript: showForgetForm();" onclick="openForgetModal()">Forget Password ?</a></p>
                         </div>
@@ -164,9 +164,9 @@
                             <form method="post" html="{:multipart=>true}" data-remote="true"  accept-charset="UTF-8">
                                 <input id="register-email" class="form-control" type="text" placeholder="Email" name="email">
                                 <input id="register-password" class="form-control" type="password" placeholder="Password" name="password">
-                                <input id="password_conf1irmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
                                 <input id="verification_code" class="form-control" type="text" placeholder="verification code">
-                                <input id="getCode" type="button" value="获取验证码">
+                                <input id="getCode" type="button" value="Get Verification Code">
                                 <input id="btn-register" href="index.html" class="btn btn-default btn-register" type="submit" value="Create account" name="commit">
                             </form>
                         </div>
@@ -180,9 +180,9 @@
                                 <input id="forget-email" class="form-control" type="text" placeholder="Email" name="email">
                                 <input id="forget-password" class="form-control" type="password" placeholder="Set New Password" name="password">
                                 <input id="forget_password_conf1irmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
-                                <input id="forget_verification_code" class="form-control" type="text" placeholder="verification code">
-                                <input id="forget_getCode" type="button" value="获取验证码">
-                                <input id="forget_btn-register" href="index.html" class="btn btn-default btn-forget" type="submit" value="Confirm" name="commit">
+                                <input id="forget_verification_code" class="form-control" type="text" placeholder="Verification Code">
+                                <input id="forget_getCode" type="button" value="Get Verification Code">
+                                <input id="forget_btn-register" href="index.html" class="btn btn-default btn-forget" type="submit" value="CONFIRM" name="commit">
                             </form>
                         </div>
                     </div>

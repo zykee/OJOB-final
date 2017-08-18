@@ -37,7 +37,7 @@ a:hover{
     padding: 1.1% 0;
 }
 .job-header h5{
-    font-size: 30px;
+    /*font-size: 30px;*/
     /*color: black;*/
     /*font-weight: 700;*/
 }
@@ -107,3 +107,7 @@ a:hover{
 /*.comments p {*/
 /*margin-bottom: 0px*/
 /*}*/
+.detail-jobs-description-start{
+    font-weight: bold !important;
+    color: #209B60;
+}

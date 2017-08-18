@@ -19,10 +19,10 @@ function getUserInfo() {
         let straddress=`<span id="straddress">${ansarr[0].address}</span>`;
         let strfield=`<span id="strfield">${ansarr[0].field}</span>`;
         //-----------------修改信息---------------------
-        let inputname=`<input type="text" value="${ansarr[0].name}" id="input-change-name">`;
-        let inputfield=`<input type="text" value="${ansarr[0].field}" id="input-change-field">`;
-        let inputaddress=`<input type="text" value="${ansarr[0].address}" id="input-change-address"/>`;
-        let inputcom=`<input type="text" value="${ansarr[0].company}" id="input-change-company">`;
+        let inputname=`<input style="padding: 17px;" type="text" value="${ansarr[0].name}" id="input-change-name">`;
+        let inputfield=`<input style="padding: 17px;" type="text" value="${ansarr[0].field}" id="input-change-field">`;
+        let inputaddress=`<input style="padding: 17px;" type="text" value="${ansarr[0].address}" id="input-change-address"/>`;
+        let inputcom=`<input style="padding: 17px;" type="text" value="${ansarr[0].company}" id="input-change-company">`;
 
         $(".user-name").append(strname);
         $(".user-field").append(strfield);
